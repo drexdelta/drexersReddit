@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node database tutorial</title>
+  <style>
+
+    table.commentsTable{
+
+      padding : 20px ;
+      border: 1px solid black;
+
+    }
+
+    tr,td{
+
+      padding : 20px;
+      border: 1px solid black;
+
+    }
+
+    div {
+        padding : 5px;
+        border : 1px solid black;
+    }
+
+  </style>
+</head>
+<body>
+
+    <input type="text" id = "userId" placeholder = "enter user id">
+  <form class="CreateUser">
+    <h1>Create a new user</h1>
+    <input type="text" class="username" id = "myusername" placeholder="username">
+    <input type="password" class="password" id = "mypassword" placeholder="password">
+    <input type="text" class="balance" placeholder="enter ur initial balance">
+    <input type = "text" class="commentText" placeholder = "enter your comment here">
+    <input type = "text" class="commentId" placeholder = "enter comment id here">
+    <button id = "deposite" >deposite</button>
+    <button id = "withdraw" >withdraw</button>
+    <button id = "commentBtn" > enter comment </button>
+    <button id = "upvoteBtn"> upvote </button>
+    <button id = "downvoteBtn"> downvote </button>
+    <button id = "getComments"> get comment </button> 
+    <input type="submit" value="Create user">
+  </form>
+
+  <br>
+
+  <form class="LoginUser">
+    <h1> Login User</h1>
+    <input type = "text" class = "username" placeholder = "username">
+    <input type = "password" class = "password" placeholder = "password">
+    <input type = "submit" value = "Login">
+  </form>
+
+  <br>
+
+  <form class= "DeleteUser">
+      <h1> Delete User</h1>
+      <input type = "text" class="username" placeholder="username">
+      <input type="password" class="password" placeholder="password">
+      <input type="submit" value ="Delete">
+  </form>
+  <form class="addComment">
+  <br>
+  <table id="commentsTable"> </table>
+  <div id = "commentDiv"> </div>
+  <script src="/app.js"></script>
+
+</body>
+</html>
